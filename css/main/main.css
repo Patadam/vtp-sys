@@ -1,1 +1,188 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Raleway';
+  color: var(--text-light);
+}
+
+html {
+  --bg: #3c4d72;
+  --bg-alt: #2f3d5c;
+  --bg-dark: #242f47;
+  --text-light: #f1f1f1;
+  --text-light-darker: #e7e7e7;
+  --text-dark: #303030;
+  --text-dark-lighter: #505050;
+}
+
+body {
+  background: var(--bg);
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  font-family: 'Roboto Slab';
+}
+
+h1 {
+  font-size: 42px;
+  margin: 0.4rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  padding: 0.4rem;
+  letter-spacing: 0.1rem;
+  color: var(--text-light-darker);
+}
+
+a {
+  text-decoration: none;
+  place-self: center;
+}
+
+a button {
+  background: var(--bg-alt);
+  color: var(--text-light);
+  outline: none;
+  border: none;
+  padding: 0.8rem 6rem;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 24px;
+  place-self: center;
+  margin: 2rem;
+  cursor: pointer;
+  -webkit-transition-property: margin;
+  transition-property: margin;
+  -webkit-transition-duration: 1.2s;
+          transition-duration: 1.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+a button:hover {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
+  background: var(--bg-dark);
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+  -webkit-transition-property: margin;
+  transition-property: margin;
+  -webkit-transition-duration: 1.2s;
+          transition-duration: 1.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  margin-top: 6rem;
+}
+
+.heading {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  place-items: center start;
+  gap: 1rem;
+}
+
+.heading h2 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.logo-small {
+  width: 64px;
+  height: 64px;
+  margin: 0.25rem;
+}
+
+.info-cards {
+  width: 90vw;
+  height: 60vh;
+}
+
+.info-cards .list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 100%;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.info-cards .card-item {
+  background: var(--bg-alt);
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
+  -webkit-transition-property: height;
+  transition-property: height;
+  -webkit-transition-duration: 1.2s;
+          transition-duration: 1.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  position: relative;
+}
+
+.info-cards .card-item h4,
+.info-cards .card-item h5 {
+  margin: 1rem 1rem 0rem 1rem;
+  position: absolute;
+  z-index: 3;
+}
+
+.info-cards .card-item h4 {
+  color: var(--text-light);
+  font-weight: 600;
+  bottom: 22%;
+  left: 1rem;
+}
+
+.info-cards .card-item h5 {
+  color: var(--text-light-darker);
+  font-weight: 500;
+  bottom: 17%;
+  left: 1rem;
+}
+
+.info-cards .card-item img {
+  position: absolute;
+  -webkit-transition-property: height;
+  transition-property: height;
+  -webkit-transition-duration: 1.2s;
+          transition-duration: 1.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  border-radius: 24px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 99;
+}
+
+.info-cards .card-item:hover img {
+  -webkit-transition-property: height;
+  transition-property: height;
+  -webkit-transition-duration: 1.2s;
+          transition-duration: 1.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  height: 70%;
+  border-radius: 24px 24px 0px 0px;
+}
+/*# sourceMappingURL=main.css.map */
